@@ -122,3 +122,70 @@ int main()
     
     return 0;
 }
+
+//6
+
+#include <stdio.h>
+
+int main()
+{
+   int a, b, aux;
+   
+   printf("digite o valor de a: ");
+   scanf("%d", &a);
+   
+   printf("digite o valor de b: ");
+   scanf("%d", &b);
+   
+   aux = a;
+   a = b; 
+   b = aux;
+   
+  printf("a troca fica: \n");
+  printf("a = %d\n", a);
+  printf("b=%d\n" ,b);
+  
+  return 0;
+}
+
+
+
+//8
+
+#include <stdio.h>
+
+int main()
+{
+    float dolar, cotacao, real;
+    
+    printf("digite o valor disponivel em dolar: ");
+    scanf("%f", &dolar);
+    
+    printf("digite a cotacao atual: ");
+    scanf("%f", &cotacao);
+    
+    real = dolar * cotacao;
+    
+    printf("a quantia em reias e de: %0.2f\n", real);
+    
+    return 0;
+}
+
+//9
+
+#include <stdio.h>
+
+int main()
+{
+   float depositado, retorno;
+   
+   printf("valor depositado: ");
+   scanf("%f", &depositado);
+   
+   retorno = depositado * 1.07;
+   
+   printf("valor total = \n");
+   printf("retorno = %0.2f\n", retorno);
+  
+  return 0;
+}
