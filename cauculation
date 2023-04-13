@@ -189,3 +189,21 @@ int main()
   
   return 0;
 }
+
+//10
+
+#include <stdio.h>
+
+int main()
+{
+   float valCompra, valPrestacao;
+   
+   printf("digite o valor da compra: ");
+   scanf("%f", &valCompra);
+   
+   valPrestacao = valCompra / 5.0;
+   
+   printf("Valor total das parcelas é de: %0.2f\n", valPrestacao);
+   
+  return 0;
+}
