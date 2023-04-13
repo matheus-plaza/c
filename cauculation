@@ -207,3 +207,42 @@ int main()
    
   return 0;
 }
+
+//11
+
+#include <stdio.h>
+
+int main()
+{
+   float custoP, acressimo, custoV;
+   
+   printf("digite o custo do produto: ");
+   scanf("%f", &custoP);
+   
+   printf("digite a porcentagem de acressimo: ");
+   scanf("%f", &acressimo);
+   
+   custoV = custoP * (1 + (acressimo / 100));
+   
+   printf("o custo de venda do produto sera de: %0.2f\n", custoV);
+    
+    return 0;
+}
+
+//12
+#include <stdio.h>
+
+int main()
+{
+    float custoCN, custoF;
+    
+    printf("escreva o custo de fabrica do carro: ");
+    scanf("%f", &custoF);
+    
+    custoCN = custoF + (custoF * 0.45);
+    custoCN = custoCN + (custoCN * 0.28);
+    
+    printf("o custo do carro novo sera de: %0.2f\n", custoCN);
+
+    return 0;
+}
