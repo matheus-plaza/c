@@ -93,3 +93,32 @@ int main()
 
     return 0;
 }
+
+//5
+
+#include <stdio.h>
+
+int main()
+{
+    char nome[20];
+    float nota1, nota2, nota3, media;
+    
+    printf("nome: ");
+    scanf("%s", nome);
+    
+    printf("nota da prova 1: ");
+    scanf("%f", &nota1);
+    
+    printf("nota da prova 2: ");
+    scanf("%f", &nota2);
+    
+    printf("nota da prova 3: ");
+    scanf("%f", &nota3);
+    
+    media = ((nota1 + nota2 + nota3) / 3);
+    
+    printf("Aluno: %s\n", nome);
+    printf("Nota media: %0.2f\n", media);
+    
+    return 0;
+}
