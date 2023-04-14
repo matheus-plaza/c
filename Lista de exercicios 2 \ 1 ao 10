@@ -31,7 +31,27 @@ int main()
     
     printf("o perimetro do retangulo é de: %d\n", perimetro);
     printf("a area do retangulo é de: %d\n", area);
+       
+   return 0;
+}
+
+    //3
+#include <stdio.h>
+
+int main()
+{
+    char nome[20];
+    float preçoC, preçoV;
+
+    printf("digite o nome do produto: ");
+    scanf("%s", nome);
     
+    printf("digite o preço de custo do produto: ");
+    scanf("%f", &preçoC);
     
-    return 0;
+    preçoV = (preçoC +(preçoC * 0.65));
+    
+    printf("O preço de venda do produto %s será de : %0.2f\n", nome, preçoV);
+    
+   return 0;
 }
