@@ -1,0 +1,14 @@
+//1
+#include <stdio.h>
+
+int main()
+{
+    float media;
+    
+    media = ((0+8+10) / 3);
+    
+    printf("a média de 0,8,10 é de : ");
+    printf("%0.2f\n", media);
+    
+    return 0;
+}
