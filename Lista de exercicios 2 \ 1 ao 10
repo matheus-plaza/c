@@ -12,3 +12,26 @@ int main()
     
     return 0;
 }
+
+//2
+#include <stdio.h>
+
+int main()
+{
+    int base, altura, area, perimetro;
+    
+    printf("digite a base do retangulo: ");
+    scanf("%d", &base);
+    
+    printf("digite a altura do retangulo: ");
+    scanf("%d", &altura);
+    
+    perimetro = ((base + altura) * 2);
+    area = base * altura;
+    
+    printf("o perimetro do retangulo é de: %d\n", perimetro);
+    printf("a area do retangulo é de: %d\n", area);
+    
+    
+    return 0;
+}
