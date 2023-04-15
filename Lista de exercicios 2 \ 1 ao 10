@@ -77,3 +77,26 @@ int main()
     
     return 0;
 }
+
+//5
+#include <stdio.h>
+
+int main()
+{
+    
+   float valorP, descontoD, valorFinal, valorD;
+    
+    printf("qual valor do produto?: ");
+    scanf("%f", &valorP);
+    
+    printf("qual porcentagem de desconto?: ");
+    scanf("%f", &descontoD);
+    
+    valorD = ((descontoD / 100) * valorP); 
+    valorFinal = valorP - valorD ;
+    
+    printf("Este é o valor do desconto: %0.2f\n", valorD);
+    printf("O valor final do produto será de %0.2f\n", valorFinal);
+    
+    return 0;
+}
