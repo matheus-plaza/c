@@ -58,10 +58,12 @@ int main()
 
 //4
 #include <stdio.h>
+#include<math.h>
 
 int main()
 {
-    float valorE, qtdParcelas, valorFinal;
+    
+   float valorE, qtdParcelas, valorFinal;
     
     printf("quanto você quer emprestado?: ");
     scanf("%f", &valorE);
@@ -69,7 +71,9 @@ int main()
     printf("Em quantos meses você planeja pagar?: ");
     scanf("%f", &qtdParcelas);
     
-    valorFinal = valorE * (1+0.02 * qtdParcelas);
+    valorFinal = valorE * pow(1+0.02, qtdParcelas);
     
     printf("Este é o valor final que devera pagar após o júros: %0.2f\n", valorFinal);
+    
+    return 0;
 }
