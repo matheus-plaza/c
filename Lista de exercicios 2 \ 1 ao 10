@@ -122,3 +122,73 @@ int main()
    
     return 0;
 }
+
+
+//7
+
+#include <stdio.h>
+
+int main()
+{
+    
+   float dolar, real, cotação;
+    
+    printf("digite o valor em dolares: ");
+    scanf("%f", &dolar);
+    
+    printf("digite a quantia de reais que equivalem a um dolar: ");
+    scanf("%f", &cotação);
+    
+   real = dolar * cotação;
+   
+    printf("Este é o valor em reais: %0.2f\n", real);
+    
+    return 0;
+}
+
+//8
+
+#include <stdio.h>
+
+int main()
+{
+    
+   float saldo, saldoReajustado;
+    
+    printf("digite o saldo da conta: ");
+    scanf("%f", &saldo);
+    
+   saldoReajustado = saldo + (saldo * 0.02);
+   
+    printf("Este é o valor com o reajuste: %0.2f\n", saldoReajustado);
+    
+    return 0;
+}
+
+//9
+#include <math.h>
+#include <stdio.h>
+
+int main()
+{
+     float numero, quadrado;
+     printf("digite um número: ");
+     scanf("%f", &numero);
+     quadrado = pow (numero,2);
+     printf("este é o seu quadrado: %f\n", quadrado);
+    return 0;
+}
+
+//10
+#include <math.h>
+#include <stdio.h>
+
+int main()
+{
+     float numeroReal, quarto;
+     printf("digite um número real: ");
+     scanf("%f", &numeroReal);
+     quarto = numeroReal / 4 ;
+     printf("esta é a quarta parte deste número: %0.2f\n", quarto);
+    return 0;
+}
