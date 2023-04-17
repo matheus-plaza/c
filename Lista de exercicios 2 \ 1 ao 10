@@ -100,3 +100,25 @@ int main()
     
     return 0;
 }
+
+
+//6
+#include <stdio.h>
+
+int main()
+{
+    
+   float valorS, reajuste, SalarioF;
+    
+    printf("qual valor salario atual?: ");
+    scanf("%f", &valorS);
+    
+    printf("qual porcentagem do reajuste?: ");
+    scanf("%f", &reajuste);
+    
+    SalarioF = valorS + ((reajuste / 100) * valorS); 
+    
+    printf("Este é o valor do salario atual: %0.2f\n", SalarioF);
+   
+    return 0;
+}
