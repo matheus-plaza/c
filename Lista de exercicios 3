@@ -42,3 +42,22 @@ int main()
 }
     return 0;
 }
+
+//3
+#include <stdio.h>
+
+int main()
+{
+    int qtdMacas;
+    printf("digite a qauntia de maçãs: ");
+    scanf("%d", &qtdMacas);
+    if(qtdMacas <= 12)
+    {
+        printf("o preço é de: %0.2f\n", qtdMacas * 1.3);
+    }
+    else
+    {
+        printf("o preço é de: %0.2f\n", qtdMacas * 1.0);
+    }
+    return 0;
+}
