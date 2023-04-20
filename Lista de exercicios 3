@@ -1,0 +1,23 @@
+//1
+
+#include <stdio.h>
+
+int main()
+{
+    float numero;
+
+    printf("digite um numero: ");
+    scanf("%f", &numero);
+    
+    if(numero > 10)
+    {
+        printf("O NÚMERO É MAIOR QUE 10!\n");
+    } 
+    else 
+    {
+        printf("O NÚMERO NÃO É MAIOR QUE 10\n");
+    }
+
+    return 0;
+}
+
