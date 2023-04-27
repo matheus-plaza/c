@@ -86,6 +86,8 @@ int main()
 {
     printf("aluno reprovado");
 }
+    printf("sua nota foi de: %0.2f\n", media);
     
     return 0;
 }
+
