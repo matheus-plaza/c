@@ -91,3 +91,28 @@ int main()
     return 0;
 }
 
+//5
+#include <stdio.h>
+
+int main()
+{
+    
+    float anoAtual, anoNascimento;
+    
+    printf("digite o ano de seu nascimento: ");
+    scanf("%f", &anoNascimento);
+    
+    printf("digite o ano atual: ");
+    scanf("%f", &anoAtual);
+    
+    if((anoAtual - anoNascimento)>= 16)
+{
+    printf("Você pode votar");
+}
+    else
+{
+    printf("Você não pode votar");
+}
+    
+    return 0;
+}
