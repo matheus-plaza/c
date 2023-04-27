@@ -61,3 +61,31 @@ int main()
     }
     return 0;
 }
+
+//4
+#include <stdio.h>
+
+int main()
+{
+    
+    float notas1a, notas2a, media;
+    
+    printf("digite a nota da primeira prova: ");
+    scanf("%f", &notas1a);
+    
+    printf("digite a nota da segunda prova: ");
+    scanf("%f", &notas2a);
+    
+    media = ((notas1a + notas2a) / 2);
+    
+    if(media > 6)
+{
+    printf("aluno aprovado");
+}
+    else
+{
+    printf("aluno reprovado");
+}
+    
+    return 0;
+}
