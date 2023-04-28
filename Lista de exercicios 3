@@ -170,26 +170,27 @@ int main()
 }
 
 //8
-#include <stdio.h> 
-int main() 
+#include <stdio.h>
+int main()
 
-{ 
-    float horasMes, salarioHora; 
-    printf("digite o valor do salario por hora: "); 
-    scanf("%f", &salarioHora); 
-
-    printf("digite a quantia de horas no mes: ");
-    scanf("%f", &horasMes); 
-
-    if ((horasMes / 4) > 40)
-{ 
-    printf("o salario total do funcionario sera de: %0.2f", (160 * salarioHora +;
-
-    
-}
-    else 
 {
-    printf("O salario total sera de: %0.2f ");
-    } 
+    float salarioHora;
+    int horasMes;
     
-    return }
+    printf("digite o valor do salario por hora: ");
+    scanf("%f", &salarioHora);
+
+    printf("digite a quantidade de horas no mes: ");
+    scanf("%d", &horasMes);
+
+    if ((horasMes/4) > 40)
+{
+    printf("o salario total do funcionamento sera de: %0.2f", ( 160 * salarioHora ) + ((((horasMes / 4) % 40) * 4) * (salarioHora / 2)));
+}
+    else
+{
+    printf("O salario total sera de: %0.2f ", (salarioHora * horasMes));
+}
+
+    return 0;
+}
