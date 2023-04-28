@@ -193,4 +193,27 @@ int main()
 }
 
     return 0;
+} 
+
+//9
+#include <stdio.h>
+
+int main()
+{
+    float salarioFixo, valorVendas;
+    
+    printf("digite o salario fixo: ");
+    scanf("%f", &salarioFixo);
+    
+    printf("digite o valor total de vendas: ");
+    scanf("%f", &valorVendas);
+    
+    if(valorVendas > 1500)
+    {
+        printf("o valor total do seu salario é de: %0.2f", salarioFixo + (1500 * 0.3) + ((valorVendas - 1500) * 0.5));
+    }
+    else
+    {
+        printf("o valor total do seu salario é de: %0.2f", salarioFixo + (valorVendas / 0.3));
+    }
 }
