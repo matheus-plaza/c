@@ -214,6 +214,42 @@ int main()
     }
     else
     {
-        printf("o valor total do seu salario é de: %0.2f", salarioFixo + (valorVendas / 0.3));
+        printf("o valor total do seu salario é de: %0.2f", salarioFixo + (valorVendas * 0.3));
     }
+    return 0;
+}
+
+//10
+#include <stdio.h>
+
+int main()
+{
+    int numConta;
+    float saldo, debito, credito, saldoAtual;
+    
+    printf("informe o número da conta: ");
+    scanf("%d", &numConta);
+    
+    printf("infrme o saldo da conta: ");
+    scanf("%f", &saldo);
+    
+    printf("informe o debito da conta: ");
+    scanf("%f", &debito);
+    
+    printf("informe o credito da conta: ");
+    scanf("%f", &credito);
+    
+    saldoAtual = (saldo - debito + credito);
+    
+    printf("O saldo atual da conta é R$ %.2f\n", saldoAtual);
+    
+    if(saldoAtual >=0)
+{
+    printf("Saldo Positivo");
+}    
+    else
+{
+    printf("Saldo Negativo");
+}    
+    return 0;
 }
