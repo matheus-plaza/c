@@ -253,3 +253,35 @@ int main()
 }    
     return 0;
 }
+
+//11
+#include <stdio.h>
+
+int main()
+{
+    int qtdAtual, qtdMax, qtdMin;
+    float qtdMedia;
+    
+    printf("informe  quantidade atual em estoque: ");
+    scanf("%d", &qtdAtual);
+    
+    printf("infrme quantidade maxima em estoque: ");
+    scanf("%d", &qtdMax);
+    
+    printf("informe  quantidade minima em estoque: ");
+    scanf("%d", &qtdMin);
+    
+    qtdMedia = ((qtdMax + qtdMin) /2);
+    
+    printf("A quantidade média é de: %.2f\n", qtdMedia);
+    
+    if(qtdAtual >= qtdMedia)
+{
+    printf("Não efetuar compra");
+}    
+    else
+{
+    printf("Efetuar compra");
+}    
+    return 0;
+}
