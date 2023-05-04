@@ -441,3 +441,44 @@ int main()
     
     return 0;
 }
+
+//16
+#include <stdio.h>
+ 
+int main()
+{
+    char nome[32];
+    int qtdAdq;
+    float precoUnd, total, desconto, totalAPagar;
+    
+    printf("digite o nome do produto: ");
+    scanf("%s", nome);
+    
+    printf("Diga a quantia adquirida: ");
+    scanf("%d", &qtdAdq);
+    
+    printf("digite o preço unitario: ");
+    scanf("%f", &precoUnd);
+    
+    if(qtdAdq <= 5){
+        desconto = 0.02;
+        total = (qtdAdq * precoUnd);
+        totalAPagar = total - (total * desconto);
+    }
+    
+            else if(qtdAdq > 5 || qtdAdq <= 10){
+                desconto = 0.03;
+                total = (qtdAdq * desconto);
+                totalAPagar = (total * desconto);
+            }
+                
+                else{
+                    desconto = 0.05;
+                    total = (qtdAdq * desconto);
+                    totalAPagar = (total * desconto);
+                }
+                
+    printf(" O desconto é de: %.2f\n o total é de: %.2f\n o total a pagar do %s com desconto é de: %.2f", desconto, total, nome, totalAPagar);
+    
+    return 0;
+}
