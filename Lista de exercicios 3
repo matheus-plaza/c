@@ -311,3 +311,44 @@ int main()
 
     return 0;
 }
+
+//13
+#include <stdio.h>
+
+int main()
+{
+    char combustivel;
+    float litros, total;
+  
+    printf("qual o combustivel? : Alcool=A, Gasolina=G :");
+    scanf("%c", &combustivel);
+    
+    printf("quntos litros de combustivel ? : ");
+    scanf("%f", &litros);
+  
+    if(combustivel == 'A' || combustivel == 'a'){
+        total = litros * 2.90;
+        
+        if(litros > 20)
+        total = (total * 0.95);
+    }
+    
+        else{
+        total = (total * 0.97);
+        }
+    
+    if(combustivel == 'G' || combustivel == 'g'){
+        total = litros * 3.30;
+        
+        if(litros > 20){
+        total = (total * 0.94);    
+        }
+        
+        else{
+            total = (total * 0.96);
+        }
+    }    
+    
+    printf("O preço final sera de %.2f", total);
+    return 0;
+}
