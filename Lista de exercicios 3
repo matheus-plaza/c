@@ -285,3 +285,29 @@ int main()
 }    
     return 0;
 }
+
+//12
+#include <stdio.h>
+
+int main()
+{
+    float numero;
+    
+    printf("digite o numero: ");
+    scanf("%f", &numero);
+    
+    if (numero > 0)
+{
+    printf("o numero e positivo");
+}
+    else if (numero < 0)
+{
+    printf("o numero e negativo");
+}
+    else
+{
+    printf("o numero e zero");
+}
+
+    return 0;
+}
