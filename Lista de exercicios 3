@@ -352,3 +352,55 @@ int main()
     printf("O preço final sera de %.2f", total);
     return 0;
 }
+
+//14
+#include <stdio.h>
+
+int main()
+{
+    int idadehomem1, idadehomem2, idademulher1, idademulher2;
+    int HVelho, HNovo, MVelha, MNova;
+    int somaIdade, produtoIdade;
+    
+    printf("Digite a idade do primeiro homem: ");
+    scanf("%d", &idadehomem1);
+    
+    printf("Digite a idade do segundo homem: ");
+    scanf("%d", &idadehomem2);
+    
+    printf("Digite a idade da primeira mulher: ");
+    scanf("%d", &idademulher1);
+    
+    printf("Digite a idade da segunda mulher: ");
+    scanf("%d", &idademulher2);
+
+    if(idadehomem1 > idadehomem2){
+        
+        HVelho = idadehomem1;
+        HNovo = idadehomem2;
+    }
+    
+    else{
+        
+        HVelho = idadehomem2;
+        HNovo = idadehomem1;
+    }
+    
+    if(idademulher1 > idademulher2){
+        
+        MVelha = idademulher1;
+        MNova = idademulher2;
+    }
+    
+    else{
+        
+        MVelha = idademulher2;
+        MNova = idademulher1;
+    }
+    
+    printf("soma do homem mais velho com a mulher mais nova é de: %d\n", somaIdade = (HVelho + MNova));
+    
+    printf("produto da idade da mulher mais velha com a do homem mais novo é de: %d\n", produtoIdade = (MVelha * HNovo));
+    
+    return 0;
+}
