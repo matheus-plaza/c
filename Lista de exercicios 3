@@ -404,3 +404,40 @@ int main()
     
     return 0;
 }
+
+//15
+
+#include <stdio.h>
+ 
+int main()
+{
+    float preçoMorangos, preçosMaças;
+    float kgDeMorangos, kgDeMaças;
+    float preçototal;
+    
+    printf("digite a quantia de kgs de morangos: ");
+    scanf("%f", &kgDeMorangos);
+    
+    printf("digite a quantia de kgs de maçãs: ");
+    scanf("%f", &kgDeMaças);
+    
+    if(kgDeMorangos < 5 ){
+        preçoMorangos = 2.50;
+    }
+    
+    else{
+        preçoMorangos = 2.20;
+    }
+    
+    if(kgDeMaças < 5){
+    preçosMaças = 1.80;
+    }
+    
+    else{
+        preçosMaças = 1.50;
+    }
+    
+    printf("O valor a ser pago pelo cliente é de: %.2f", preçototal = (preçoMorangos * kgDeMorangos) + (preçosMaças + kgDeMaças));
+    
+    return 0;
+}
