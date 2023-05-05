@@ -33,6 +33,8 @@ int main()
     printf("digite o peso em kgs: ");
     scanf("%d", &peso);
     
+    
+    
     printf("digite sua altura em metros: ");
     scanf("%f", &altura);
     
@@ -64,6 +66,43 @@ int main()
     }
     
     //Evandro, n sei se ta certo, pq n acho que uma pessoa que pesa 100kg e tem 1.50m, esteja no peso normal ;-;
+    
+    return 0;
+}
+
+//3
+#include <stdio.h>
+int main()
+{
+    int num1, num2, num3, menor, maior;
+    
+    printf("digite o primeiro numero: ");
+    scanf("%d", &num1);
+    
+    printf("digite o segundo numero: ");
+    scanf("%d", &num2);
+    
+    printf("digite o terceiro numero: ");
+    scanf("%d", &num3);
+    
+    if (num1 > num2 && num1 > num3){
+        maior = num1;
+    } else if (num2 > num3) {
+        maior = num2;
+        
+    } else {
+        maior = num3;
+    }
+
+    if (num1 < num2 && num1 < num3) {
+        menor = num1;
+    } else if (num2 < num3) {
+        menor = num2;
+    } else {
+        menor = num3;
+    }
+
+    printf(" menor :%d, maior%d ", menor, maior);
     
     return 0;
 }
