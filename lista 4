@@ -24,50 +24,46 @@ int main()
 }
 
 //1 Abaixo do peso: menos de 18.5
-//Peso normal: 18.5 - 24.9
-//Sobrepeso: 25 - 29.9
-//Obesidade grau 1: 30 - 34.9
-//Obesidade grau 2: 35 - 39.9
-//Obesidade grau 3: 40 ou mais 
-#include <stdio.h>
+//Peso normal: 18.5 - 24.9#include <stdio.h>
 int main()
 {
-    int peso, altura;
-    float imc;
+    int peso;
+    float imc, altura;
     
-    printf("digite o peso: ");
+    printf("digite o peso em kgs: ");
     scanf("%d", &peso);
     
-    printf("digite sua altura: ");
-    scanf("%d", &altura);
+    printf("digite sua altura em metros: ");
+    scanf("%f", &altura);
     
     imc = peso / (altura * altura);
     
     if(imc < 18.5){
-        printf("Abaixo do peso", imc);
+        printf("Abaixo do peso");
     }
     
     else if(imc >= 18.5 || imc <=24.9){
-        printf("Peso normal", imc);
+        printf("Peso normal");
     }
     
     else if(imc > 25 || imc <29.9){
-        printf("sobrepeso", imc);
+        printf("sobrepeso");
     }
     
     else if(imc > 30 || imc <34.9){
-        printf("obesidade grau 1", imc);
+        printf("obesidade grau 1");
     }
     
     else if(imc > 35 || imc <39.9){
-        printf("obesidade grau 2", imc);
+        printf("obesidade grau 2");
     }
     
     
     else{
-        printf("obesidade grau 3", imc);
+        printf("obesidade grau 3");
     }
+    
+    //Evandro, n sei se ta certo, pq n acho que uma pessoa que pesa 100kg e tem 1.50m, esteja no peso normal ;-;
     
     return 0;
 }
-TERMINAR
