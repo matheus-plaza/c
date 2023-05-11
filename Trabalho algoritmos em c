@@ -1,0 +1,19 @@
+//1
+#include <stdio.h>
+
+int main()
+{
+    float precocusto, acress, valvenda;
+    
+    printf("Digite o preço de custo do produto: ");
+    scanf("%f", &precocusto);
+    
+    printf("Digite o percentual de acressimo: ");
+    scanf("%f", &acress);
+    
+    valvenda = precocusto + precocusto * (acress / 100);
+    
+    printf("O valor de venda do produto é de: %.2f", valvenda);
+
+    return 0;
+}
