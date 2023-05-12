@@ -108,6 +108,7 @@ int main()
 }
 
 //4
+#include <stdio.h>
 int main()
 {
     int num;
