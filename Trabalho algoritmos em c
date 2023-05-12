@@ -144,3 +144,35 @@ int main()
       
     return 0;
 }
+//7
+#include <stdio.h>
+
+int main()
+{
+    int atualEstoque, maxEstoque, minEstoque;
+    float  media;
+    
+    printf("Digite a quantidade atual em estoque: ");
+    scanf("%d", &atualEstoque);
+        
+    printf("Digite a quantidade maxima do estoque: ");
+    scanf("%d", &maxEstoque);
+    
+    printf("Digite a quantidade minima do estoque: ");
+    scanf("%d", &minEstoque);
+    
+    media = (maxEstoque + minEstoque) / 2;
+    
+    printf("a quantidade media e de %.2f\n", media);
+    
+    {
+    if(atualEstoque >= media)
+        printf("Não efetuar compra");
+    
+        
+    else
+        printf("Efetuar compra");
+    }
+      
+    return 0;
+}
