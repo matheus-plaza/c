@@ -17,3 +17,20 @@ int main()
 
     return 0;
 }
+
+//2
+#include <stdio.h>
+
+int main()
+{
+    float  valdeposito, valtotal;
+    
+    printf("Digite o valor depositado: ");
+    scanf("%f", &valdeposito);
+    
+    valtotal = valdeposito + valdeposito / 200;
+    
+    printf("O valor total é de: %.2f", valtotal);
+
+    return 0;
+}
