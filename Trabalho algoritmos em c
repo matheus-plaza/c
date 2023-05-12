@@ -34,3 +34,22 @@ int main()
 
     return 0;
 }
+
+//3
+#include <stdio.h>
+
+int main()
+{
+    float  A, B;
+    
+    printf("Digite o valor de a: ");
+    scanf("%f", &A);
+    
+    printf("Digite o valor de b: ");
+    scanf("%f", &B);
+    
+    printf("O valor total de a trocado é %.2f\n", B);
+    printf("O valor total de b trocado é %.2f", A);
+
+    return 0;
+}
