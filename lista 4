@@ -199,3 +199,24 @@ int main()
     
     return 0;
 }
+
+//6
+#include <stdio.h>
+
+int main()
+{
+    char letra;
+
+    printf("Digite uma letra: ");
+    scanf("%c", &letra);
+        
+    {
+    if(letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u')
+        printf("A letra é uma vogal");
+        
+        else
+            printf("A letra é uma consoante");
+    }
+    
+    return 0;
+}
