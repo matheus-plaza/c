@@ -15,3 +15,26 @@ int main()
 
     return 0;
 }
+
+//2
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    
+    do{
+    printf("Digite um número: ");
+    scanf("%d", &num);
+    }while(num < 1);
+    
+        if(num % 2 == 0){
+        printf("este numero é par");
+        }
+        
+        else{
+            printf("numero é ímpar");
+        }
+    
+    return 0;
+}
