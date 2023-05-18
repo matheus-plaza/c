@@ -37,4 +37,25 @@ int main()
         }
     
     return 0;
+    
+//3
+
+#include <stdio.h>
+
+int main()
+{
+    int num, soma = 0;
+    
+    do {
+        printf("Digite um numero inteiro positivo : ");
+        scanf("%d", &num);
+        
+        if (num >= 0) {
+            soma += num;
+        }
+    } while (num >= 0);
+    
+    printf("a soma dos numeros anteriores e de: %d\n", soma);
+    
+    return 0;
 }
