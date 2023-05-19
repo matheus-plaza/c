@@ -47,7 +47,7 @@ int main()
     int num, soma = 0;
     
     do {
-        printf("Digite um numero inteiro positivo : ");
+        printf("Digite numeros inteiros positivos para soma-los e um qualquer negativo para obter o resultado : ");
         scanf("%d", &num);
         
         if (num >= 0) {
