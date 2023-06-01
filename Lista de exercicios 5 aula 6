@@ -130,3 +130,35 @@ int main()
 
     return 0;
 }
+
+/*7*/
+#include <stdio.h>
+
+int main()
+{
+    int num, i = 1, mais =0, menos=0 , entre=0;
+    
+
+    do{  
+        printf("digite a quantia de vezes que o aluno %d comeu no restaurante : ", i);
+        scanf("%d", &num);
+        
+        if(num < 10){
+            menos++;
+        }
+        else if(num >= 10 && num <=15){
+            entre++;
+        }
+        else{
+            mais++;
+        }
+
+        i++;
+    }while(i <= 10);
+    
+    printf("a porcentagem de alunos que comeram menos de 10 vezes foram de %.2f\n", (float)menos / 10 * 100);
+    printf("a porcentagem de alunos que comeram entre 10 e 15 vezes foram de %.2f\n", (float)entre / 10 * 100);
+    printf("a porcentagem de alunos que comeram mais de 15 vezes foram de %.2f\n", (float)mais / 10 * 100);
+    
+    return 0;
+}
