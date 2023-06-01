@@ -162,3 +162,45 @@ int main()
     
     return 0;
 }
+
+/*8 - Escrever um algoritmo que leia um conjunto de X informações (Número
+deverá ser definido pelo usuário) contendo, cada uma delas, a altura e o sexo
+de uma pessoa (código=1, masculino código=2, feminino), calcule e mostre o
+seguinte:
+a) a maior e a menor altura da turma
+b) a média da altura das mulheres
+c) a média da altura da turma.
+(Usar a estrutura repetição condicional no inicio*/
+#include <stdio.h>
+
+int main()
+{
+    int nPesoas, i=0, codigo, qtdFeminino=0;
+    float altura, maiorAltura = 0, menorAltura = 1000, somaAltura = 0, mediaAltura=0;
+    
+    printf("digite o numero de pessoas : ");
+    scanf("%d", &nPesoas);
+    
+    while(i < nPesoas){
+        printf("digite o código da pessoa (1 = masculino 2 = feminino)");
+        scanf("%d", &codigo);
+        
+        printf("digite a altura da pessoa: ");
+        scanf("%f", &altura);
+        
+        if(maiorAltura < altura){
+            maiorAltura = altura;
+        }
+        
+        if(menorAltura < altura){
+            menorAltura = altura;
+    }
+    
+        if(codigo == 2){
+            qtdFeminino ++;
+            somaAltura += altura; 
+        }
+        
+        mediaAltura = somaAltura + altura;
+    return 0; terminar
+}
