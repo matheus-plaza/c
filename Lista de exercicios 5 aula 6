@@ -163,14 +163,7 @@ int main()
     return 0;
 }
 
-/*8 - Escrever um algoritmo que leia um conjunto de X informações (Número
-deverá ser definido pelo usuário) contendo, cada uma delas, a altura e o sexo
-de uma pessoa (código=1, masculino código=2, feminino), calcule e mostre o
-seguinte:
-a) a maior e a menor altura da turma
-b) a média da altura das mulheres
-c) a média da altura da turma.
-(Usar a estrutura repetição condicional no inicio*/
+/*8*/
 #include <stdio.h>
 
 int main()
@@ -203,4 +196,50 @@ int main()
         
         mediaAltura = somaAltura + altura;
     return 0; terminar
+}
+
+/*9*/
+#include <stdio.h>
+
+int main()
+{
+    float salario, bonus, impacto;
+    
+    int i=1, tempocasa, sexo;
+    
+    do{
+        printf("funcionario %d\n", i);
+        printf("qual o salario do funcionario ? : ");
+        scanf("%f", &salario);
+        
+        printf("qual o sexo do funcionario ? (1 = homem  2 = mulher): ");
+        scanf("%d", &sexo);
+        
+        printf("qual o tempo de casa do funcionario em anos ? : ");
+        scanf("%d", &tempocasa);
+        
+        if(sexo == 1 && tempocasa > 15){
+            bonus=(salario/5);
+        }
+        
+        
+        else if(sexo == 2 && tempocasa > 10){
+            bonus=(salario/4);
+        }
+        
+        else{
+            bonus=5000;
+        }
+        
+        printf("bonus no total de %.2f\n \n", bonus);
+        
+        impacto += bonus;
+        
+        i++;
+        
+    }while(i <= 30);
+    
+    printf("montante total dos bonus concedidos = %.2f", impacto);
+    
+    return 0;
 }
