@@ -93,3 +93,31 @@ int vetor[10], i, maiorVetor=0, posicaoMaior=0;
     return 0;
 
 }
+
+/*5 */
+#include <stdio.h>
+int main()
+{
+
+int vetor[5], vetor2[5], vetor3[5], i;
+    
+    for(i=0; i<5; i++){
+    printf("digite o %dº valor do 1º vetor: ", i + 1);
+    scanf("%d", &vetor[i]);
+    }
+    printf("\n");         
+    for(i=0; i<5; i++){
+        printf("digite o %dº valor do 2º vetor: ", i + 1);
+        scanf("%d", &vetor2[i]);
+    }
+    printf("\n");         
+    
+    for(i=0; i<5; i++){
+        vetor3[i] = vetor[i] + vetor2[i];
+        
+        printf("valor do elemento %d do 1º vetor + elemento %d do 2º vetor =%d\n", i + 1, i + 1, vetor3[i]);
+    }    
+
+    return 0;
+
+}
