@@ -43,3 +43,29 @@ int vetor[5], i;
     return 0;
 
 }
+
+/*3 */
+#include <stdio.h>
+int main()
+{
+
+int vetor[10], i, verificacao;
+    
+    for(i=0; i<10; i++){
+        printf("digite o %dº valor: ", i + 1);
+        scanf("%d", &vetor[i]);
+    }
+    
+    for(i=0; i<10; i++){
+        
+        if(vetor[i] % 2 == 0){
+           verificacao++;
+        }
+    }    
+    
+    printf("A quantia de valores pares são :%d\n", verificacao);
+
+    return 0;
+
+}
+
