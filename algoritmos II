@@ -1,3 +1,39 @@
+a)
+
+#include <stdio.h>
+
+int main()
+{
+   int triangulo, quadrado, lado, medida, num = 1, i, j;
+   
+   printf("quantos lados tem o poligono ?");
+   scanf("%d", &lado);
+   
+   printf("qual a medida do lado ?");
+   scanf("%d", &medida);
+   
+   triangulo = lado * medida;
+   quadrado = lado * lado;
+   
+       {if(lado == 3)
+       printf("TRIÂNGULO, perimetro = %d", triangulo);
+       
+       else if(lado == 4)
+       printf("QUADRADO, area = %d", quadrado);
+       
+       else if(lado == 5)
+       printf("pentagono");
+       
+       else
+       printf("Polígono não identificado");
+   }   
+    
+    return 0;
+}
+
+
+
+
 b)
 
 #include <stdio.h>
