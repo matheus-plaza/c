@@ -1,0 +1,22 @@
+b)
+
+#include <stdio.h>
+
+int main()
+{
+   int linhas, num = 1, i, j;
+   
+   printf("digite  quantidade de linhas");
+   scanf("%d", &linhas);
+   
+   for(i = 1; i <= linhas; i++){
+       for(j = 1; j <= i; j++){
+           printf(" %d", num);
+           num++;
+       }
+       printf("\n");
+   }
+
+    return 0;
+}
+
