@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main()
+{
+    float notas = 0, matriz[4][4], vetor[4], media1 = 0, media2 = 0, media3 = 0, media4 = 0, meedia1, meedia2, meedia3, meedia4;
+    
+    int a, b, c, d;
+    
+    printf("digite 4 notas de 0 a 10\n");
+    for(int i=0;i<4;i++){
+        for(int j=0;j<4;j++){
+            scanf("%f", &matriz[i][j]);
+        }
+        printf("\n");
+    }
+
+    for(a=0; a<4; a++){
+        media1 +=matriz[0][a];
+    }
+    
+    meedia1 = (media1 / 4);
+    
+    for(b=0; b<4; b++){
+        media2 +=matriz[1][b];
+    }
+        meedia2 = (media2 / 4);
+
+    
+    for(c=0; c<4; c++){
+        media3 +=matriz[2][c];
+    }
+    
+        meedia3 = (media3 / 4);
+
+    for(d=0; d<4; d++){
+        media4 +=matriz[3][d];
+    }
+    
+        meedia4 = (media4 / 4);
+
+    
+    printf(" media aluno 1 = %f, media aluno 2 = %f, media aluno 3 = %f, media aluno 4 = %f", meedia1, meedia2, meedia3, meedia4);
+    
+    return 0;
+}
