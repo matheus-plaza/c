@@ -2,7 +2,7 @@
 
 int main()
 {
-    float matriz[4][4], total1 = 0, total2 = 0, total3 = 0, total4 = 0, meedia1, meedia2, meedia3, meedia4;
+    float matriz[4][4], media = 0, mediaAluno[4];
     
     int a, b, c, d;
     
@@ -10,28 +10,16 @@ int main()
     for(int i=0;i<4;i++){
         for(int j=0;j<4;j++){
             scanf("%f", &matriz[i][j]);
+            media+=matriz[i][j];
         }
-        printf("\n");
-    }
-
-    for(a=0; a<4; a++){
-        total1 +=matriz[0][a];
-        total2 +=matriz[1][a];
-        total3 +=matriz[2][a];
-        total4 +=matriz[3][a];
-        
+        mediaAluno[i] = media / 4;
+        media = 0;
+        printf("\ndigite as quatro notas do aluno %d \n", i + 2);
     }
     
-        meedia1 = (total1 / 4);
-    
-        meedia2 = (total2 / 4);
-
-        meedia3 = (total3 / 4);
-
-        meedia4 = (total4 / 4);
-
-    
-    printf(" media aluno 1 = %f, media aluno 2 = %f, media aluno 3 = %f, media aluno 4 = %f", meedia1, meedia2, meedia3, meedia4);
+    for(int i=0;i<4;i++){
+        printf("a media do aluno %d é %.2f\n", i + 1, mediaAluno[i]);
+    }
     
     return 0;
 }
