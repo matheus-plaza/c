@@ -16,26 +16,18 @@ int main()
 
     for(a=0; a<4; a++){
         total1 +=matriz[0][a];
+        total2 +=matriz[1][a];
+        total3 +=matriz[2][a];
+        total4 +=matriz[3][a];
+        
     }
     
-    meedia1 = (total1 / 4);
+        meedia1 = (total1 / 4);
     
-    for(b=0; b<4; b++){
-        total2 +=matriz[1][b];
-    }
         meedia2 = (total2 / 4);
 
-    
-    for(c=0; c<4; c++){
-        total3 +=matriz[2][c];
-    }
-    
         meedia3 = (total3 / 4);
 
-    for(d=0; d<4; d++){
-        total4 +=matriz[3][d];
-    }
-    
         meedia4 = (total4 / 4);
 
     
