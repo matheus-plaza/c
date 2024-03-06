@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+/*Crie um programa em C, que contenha uma função recursiva
+que receba dois inteiros positivos k e n e calcule kn. Utilize
+apenas multiplicações. O programa principal deve solicitar ao
+usuário os valores de k e n e imprimir o resultado da chamada
+da função.*/
+int kn(int k, int n){
+    if(n == 0){
+        return 1;
+    }
+    else{
+        return k * kn(k, n - 1);
+    }
+
+}
+
+
+int main()
+{
+    int k, n;
+    printf("Digite dois numeros inteiros n\n");
+    scanf("%d", &k);
+    scanf("%d", &n);
+
+    printf("kn eh = %d", kn(k, n));
+    return 0;
+}
